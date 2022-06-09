@@ -1,3 +1,4 @@
+<title>GDeX</title>
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
@@ -16,9 +17,23 @@
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
+            <div>
+                <x-jet-label for="name" value="{{ __('Apellidos') }}" />
+                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="last-name" :value="old('last-name')" required autofocus autocomplete="last-name" />
+            </div>
+
             <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Correo') }}" />
                 <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+            </div>
+
+            <div class="mb-3">
+                <x-jet-label for="idRol" value="{{ __('Registrarse como:') }}" />
+                <select name="idRol" class="form-select block mt-1 w-full border-gray-300 rounded-md" aria-label="Default select example">
+                    <option selected>Seleccione una opción</option>
+                    <option value="1">Instructor</option>
+                    <option value="2">Estudiante</option>
+                </select>
             </div>
 
             <div class="mt-4">
