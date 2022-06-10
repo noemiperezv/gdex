@@ -1,5 +1,6 @@
 <title>GDeX</title>
 <x-app-layout>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Cursos') }}
@@ -13,6 +14,7 @@
             </div>
         </div>
     </div>
+    @include('footer')
 </x-app-layout>
 
 
